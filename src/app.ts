@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(cors())
 app.use(router)
 
-const uri: string = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.nvt4o.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
+const uri: string = `mongodb+srv://new_user_milin:milintanush@cluster0.nvt4o.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 mongoose.connect(process.env.MONGODB_URI || uri).then(() =>
     app.listen(PORT, () => 
